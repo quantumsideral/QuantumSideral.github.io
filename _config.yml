@@ -1,0 +1,7 @@
+theme: jekyll-theme-cayman
+title: Quantum Sideral
+description: Des particules d’histoires dans un multivers d’aventures
+user: quantumsideral
+project: quantumsideral.github.io
+plugins:
+  - jekyll-feed
