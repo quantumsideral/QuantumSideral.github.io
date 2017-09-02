@@ -8,9 +8,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script type="text/javascript">
+      window.onload=function(){
+        if(typeof(Storage) !== "undefined") {
+          if (localStorage.lightMode) {document.getElementById("body").className = localStorage.lightMode ;}
+          else {document.getElementById("body").className = "light-mode" ;}
+          
+          if (localStorage.buttonLightMode) {document.getElementById("darkLight").className = localStorage.buttonLightMode ;}
+          else {document.getElementById("darkLight").className = "border" ;}}
+        else {
+          document.getElementById("body").className = "light-mode" ;
+          document.getElementById("darkLight").className = "border" ;}}
+    </script>
   </head>
 
   <body id="body" class="light-mode">
+
 
     <section class="page-header">
       <div class="neon"><h1 class="project-name">Quantum Sideral</h1><br><h2 class="project-tagline">Des particules d’histoires dans <br class="respbreak"/>un multivers d’aventures</h2></div>
@@ -22,12 +35,12 @@
             <script type="text/javascript">
               function toggleMenu() {
                 var dropdownMenu = document.getElementById("dropdownMenu");
-                var currentClass = dropdownMenu.className;
-                dropdownMenu.className = currentClass == "dropdown-hide" ? "dropdown-show" : "dropdown-hide";
+                var currentClassStory = dropdownMenu.className;
+                dropdownMenu.className = currentClassStory == "dropdown-hide" ? "dropdown-show" : "dropdown-hide";
 
                 var dropdownButton = document.getElementById("dropdownButton");
-                var currentClass = dropdownButton.className;
-                dropdownButton.className = currentClass == "dropdown-off" ? "dropdown-on" : "dropdown-off";}
+                var currentClassStory = dropdownButton.className;
+                dropdownButton.className = currentClassStory == "dropdown-off" ? "dropdown-on" : "dropdown-off";}
             </script>
           </div>
           <div class="divbreak">
@@ -42,16 +55,18 @@
             <a href="https://quantumsideral.github.io/la-croisee-des-chemins/"><button class="border">La croisee des chemins</button></a>
           </div>
           <div class="divbreak">
-            <button type="button" class="border" id="darkLight" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">Dark mode</button>
+            <button type="button" class="border" id="darkLight" onclick="toggleDarkLight()">Dark mode</button>
             <script type="text/javascript">
               function toggleDarkLight() {
                 var body = document.getElementById("body");
                 var currentClass = body.className;
                 body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+                localStorage.setItem("lightMode", body.className);
 
                 var button = document.getElementById("darkLight");
                 var currentClassButton = button.className;
-                button.className = currentClassButton == "border" ? "border-dark" : "border";}
+                button.className = currentClassButton == "border" ? "border-dark" : "border";
+                localStorage.setItem("buttonLightMode", button.className);}
             </script>
           </div>
       </div>
@@ -99,12 +114,12 @@
         <script type="text/javascript">
           function toggleListMenu(idMenu,idButton) {
             var dropdownMenu = document.getElementById(idMenu);
-            var currentClass = dropdownMenu.className;
-            dropdownMenu.className = currentClass == "dropdown-list-hide" ? "dropdown-list-show" : "dropdown-list-hide";
+            var currentClassDD = dropdownMenu.className;
+            dropdownMenu.className = currentClassDD == "dropdown-list-hide" ? "dropdown-list-show" : "dropdown-list-hide";
 
             var dropdownButton = document.getElementById(idButton);
-            var currentClass = dropdownButton.className;
-            dropdownButton.className = currentClass == "dropdown-off" ? "dropdown-on" : "dropdown-off";}
+            var currentClassDD = dropdownButton.className;
+            dropdownButton.className = currentClassDD == "dropdown-off" ? "dropdown-on" : "dropdown-off";}
         </script>
       </div>
 
