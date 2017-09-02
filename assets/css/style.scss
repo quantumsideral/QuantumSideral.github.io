@@ -13,11 +13,13 @@ ul {
 
 h1 {font-family: 'EunomiaRegular';}
 
+
 .dark-mode {
   hr {
     border-color:#eee;
     color:#eee;
     background-color:#eee;};
+  .site-footer {border-top:solid 1px #eee};
   background-color: #111;
   color: #eee;
   .dropdown-list-show {background-color: #eee;}
@@ -32,6 +34,7 @@ h1 {font-family: 'EunomiaRegular';}
     border-color:#111;
     color:#111;
     background-color:#111;};
+  .site-footer {border-top:solid 1px #111};
   background-color: #eee;
   color: #111;
   .dropdown-list-show {background-color: #111;}
