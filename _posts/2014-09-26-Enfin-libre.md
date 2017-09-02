@@ -1,7 +1,7 @@
 ---
 layout: default
 categories: Histoires Fantastique
-Title: Enfin libre !
+title: Enfin libre !
 commentIssueId: 3
 ---
 # Enfin libre !
