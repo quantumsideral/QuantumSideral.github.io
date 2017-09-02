@@ -11,10 +11,10 @@
     <script type="text/javascript">
       window.onload=function(){
         if(typeof(Storage) !== "undefined") {
-          if (localStorage.lightMode) {document.getElementById("body").className = localStorage.lightMode ;}
+          if (localStorage.lightModeQS) {document.getElementById("body").className = localStorage.lightModeQS ;}
           else {document.getElementById("body").className = "light-mode" ;}
           
-          if (localStorage.buttonLightMode) {document.getElementById("darkLight").className = localStorage.buttonLightMode ;}
+          if (localStorage.buttonLightModeQS) {document.getElementById("darkLight").className = localStorage.buttonLightModeQS ;}
           else {document.getElementById("darkLight").className = "border" ;}}
         else {
           document.getElementById("body").className = "light-mode" ;
@@ -61,12 +61,12 @@
                 var body = document.getElementById("body");
                 var currentClass = body.className;
                 body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
-                localStorage.setItem("lightMode", body.className);
+                localStorage.setItem("lightModeQS", body.className);
 
                 var button = document.getElementById("darkLight");
                 var currentClassButton = button.className;
                 button.className = currentClassButton == "border" ? "border-dark" : "border";
-                localStorage.setItem("buttonLightMode", button.className);}
+                localStorage.setItem("buttonLightModeQS", button.className);}
             </script>
           </div>
       </div>
