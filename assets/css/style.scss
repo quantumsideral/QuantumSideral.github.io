@@ -169,6 +169,12 @@ button:focus {outline: none}
   border-top-left-radius: 60px 90px;
   border-bottom-right-radius: 60px 90px;}
 
+.border-red {
+  color:red;
+  border: solid 5px red;
+  border-top-left-radius: 60px 90px;
+  border-bottom-right-radius: 60px 90px;}
+
 .dropdown-off,.dropdown-on {
   position: relative;}
 
