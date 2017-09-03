@@ -14,13 +14,8 @@
     <script type="text/javascript">
       if(typeof(Storage) !== "undefined") {
         if (localStorage.lightModeQS) {document.getElementById("body").className = localStorage.lightModeQS ;}
-        else {document.getElementById("body").className = "light-mode" ;}
-        
-        if (localStorage.buttonLightModeQS) {document.getElementById("darkLight").className = localStorage.buttonLightModeQS ;}
-        else {document.getElementById("darkLight").className = "border" ;}}
-      else {
-        document.getElementById("body").className = "light-mode" ;
-        document.getElementById("darkLight").className = "border" ;}
+        else {document.getElementById("body").className = "light-mode" ;}}        
+      else {document.getElementById("body").className = "light-mode" ;}
     </script>
 
     <section class="page-header">
@@ -53,8 +48,13 @@
             <a href="https://quantumsideral.github.io/la-croisee-des-chemins/"><button class="border">La croisee des chemins</button></a>
           </div>
           <div class="divbreak">
-            <button type="button" class="border" id="darkLight" onclick="toggleDarkLight()">Dark mode</button>
+            <button type="button" id="darkLight" onclick="toggleDarkLight()">Dark mode</button>
             <script type="text/javascript">
+              if(typeof(Storage) !== "undefined") {
+                if (localStorage.buttonLightModeQS) {document.getElementById("darkLight").className = localStorage.buttonLightModeQS ;}
+                else {document.getElementById("darkLight").className = "border" ;}}
+              else {document.getElementById("darkLight").className = "border" ;}
+
               function toggleDarkLight() {
                 var body = document.getElementById("body");
                 var currentClass = body.className;
