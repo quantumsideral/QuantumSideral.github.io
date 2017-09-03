@@ -11,6 +11,8 @@ La police des titres est [Eunomia](http://dotcolon.net/font/eunomia/), créée p
 
 L’image de fond du bandeau, [*Cities Of The Future*](https://jonasdero.deviantart.com/), a été crée par [Jonas De Ro](http://www.facebook.com/jonas.dero).
 
+L’image de fond de la page 404, [*The astronaut lost*](https://www.behance.net/gallery/13395825/THE-ASTRONAUT-LOST), a été crée par [Jakub Walczak](https://www.behance.net/JakubWalczak).
+
 ## Contenu
 
 ![](https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png)
