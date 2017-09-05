@@ -9,9 +9,9 @@ Ce site a été généré par [GitHub Pages](https://pages.github.com) avec le t
 
 La police des titres est [Eunomia](http://dotcolon.net/font/eunomia/), créée par [Sora Sagano](http://dotcolon.net/about/).
 
-L’image de fond du bandeau, [*Cities Of The Future*](https://jonasdero.deviantart.com/), a été crée par [Jonas De Ro](http://www.facebook.com/jonas.dero).
+L’image de fond du bandeau, [*Cities Of The Future*](https://jonasdero.deviantart.com/), a été créée par [Jonas De Ro](http://www.facebook.com/jonas.dero).
 
-L’image de fond de la page 404, [*The astronaut lost*](https://www.behance.net/gallery/13395825/THE-ASTRONAUT-LOST), a été crée par [Jakub Walczak](https://www.behance.net/JakubWalczak).
+L’image de fond de la page 404, [*The astronaut lost*](https://www.behance.net/gallery/13395825/THE-ASTRONAUT-LOST), a été créée par [Jakub Walczak](https://www.behance.net/JakubWalczak).
 
 ## Contenu
 
