@@ -48,3 +48,23 @@ function toggleDarkLight(bodyID,buttonID) {
   button.className = currentClassButton == "border" ? "border-dark" : "border";
   if (typeof(Storage) !== undefined) {localStorage.setItem("buttonLightModeQS", button.className);}
 }
+
+function toggleMenu() {
+  var dropdownMenu = document.getElementById("dropdownMenu");
+  var currentClassStory = dropdownMenu.className;
+  dropdownMenu.className = currentClassStory == "dropdown-hide" ? "dropdown-show" : "dropdown-hide";
+
+  var dropdownButton = document.getElementById("dropdownButton");
+  var currentClassStory = dropdownButton.className;
+  dropdownButton.className = currentClassStory == "dropdown-off" ? "dropdown-on" : "dropdown-off";
+}
+
+function toggleListMenu(idMenu,idButton) {
+  var dropdownMenu = document.getElementById(idMenu);
+  var currentClassDD = dropdownMenu.className;
+  dropdownMenu.className = currentClassDD == "dropdown-list-hide" ? "dropdown-list-show" : "dropdown-list-hide";
+
+  var dropdownButton = document.getElementById(idButton);
+  var currentClassDD = dropdownButton.className;
+  dropdownButton.className = currentClassDD == "dropdown-off" ? "dropdown-on" : "dropdown-off";
+}

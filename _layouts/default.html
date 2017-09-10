@@ -24,16 +24,6 @@
           <div class="divbreak">
             <a href="{{ site.baseurl }}{% link index.md %}"><button class="border">Accueil</button></a>
             <button type="button" class="dropdown-off" id="dropdownButton" onclick="toggleMenu()" title="Toggle menu">Histoires</button>
-            <script type="text/javascript">
-              function toggleMenu() {
-                var dropdownMenu = document.getElementById("dropdownMenu");
-                var currentClassStory = dropdownMenu.className;
-                dropdownMenu.className = currentClassStory == "dropdown-hide" ? "dropdown-show" : "dropdown-hide";
-
-                var dropdownButton = document.getElementById("dropdownButton");
-                var currentClassStory = dropdownButton.className;
-                dropdownButton.className = currentClassStory == "dropdown-off" ? "dropdown-on" : "dropdown-off";}
-            </script>
           </div>
           <div class="divbreak">
             <a href="{{ site.baseurl }}{% link license.md %}#main-content"><button class="border">Licences</button></a>
@@ -90,17 +80,6 @@
         <div class="divbreak">
           <a href="{{ site.baseurl }}{% link all.md %}#main-content"><button class="border">Toutes les histoires</button></a>
         </div>
-
-        <script type="text/javascript">
-          function toggleListMenu(idMenu,idButton) {
-            var dropdownMenu = document.getElementById(idMenu);
-            var currentClassDD = dropdownMenu.className;
-            dropdownMenu.className = currentClassDD == "dropdown-list-hide" ? "dropdown-list-show" : "dropdown-list-hide";
-
-            var dropdownButton = document.getElementById(idButton);
-            var currentClassDD = dropdownButton.className;
-            dropdownButton.className = currentClassDD == "dropdown-off" ? "dropdown-on" : "dropdown-off";}
-        </script>
       </div>
 
     </section>
