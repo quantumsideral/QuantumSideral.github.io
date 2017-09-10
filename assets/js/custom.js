@@ -18,10 +18,9 @@ function fireComments() {
     success: function (msg) {loadComments(msg);}});
 }
 
-function setLightMode(bodyID,buttonID,deleteID) {
+function setLightMode(bodyID,buttonID) {
     var body = document.getElementById(bodyID);
     var button = document.getElementById(buttonID);
-    var deleteButton = document.getElementById(deleteID);
 
     if (typeof(Storage) !== undefined) {
       if (localStorage.lightModeQS !== null && localStorage.lightModeQS !== undefined) {
@@ -31,17 +30,11 @@ function setLightMode(bodyID,buttonID,deleteID) {
       if (localStorage.buttonLightModeQS !== null && localStorage.buttonLightModeQS !== undefined) {
         button.className = localStorage.buttonLightModeQS ;}
       else {button.className = "border";}
-
-      if (deleteButton !== null) {
-        if (localStorage.deleteLightModeQS !== null && localStorage.deleteLightModeQS !== undefined) {
-          deleteButton.className = localStorage.deleteLightModeQS ;}
-        else {deleteButton.className = "border-purple";}}
     }
 
     else {
       body.className = "light-mode" ;
-      button.className = "border";
-      deleteButton.className = "border-purple";}
+      button.className = "border";}
 }
 
 function toggleDarkLight(bodyID,buttonID) {
