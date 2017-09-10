@@ -17,13 +17,6 @@
   </head>
 
   <body id="body">
-    <script type="text/javascript">
-      if(typeof(Storage) !== "undefined") {
-        if (localStorage.lightModeQS) {document.getElementById("body").className = localStorage.lightModeQS ;}
-        else {document.getElementById("body").className = "light-mode" ;}}        
-      else {document.getElementById("body").className = "light-mode" ;}
-    </script>
-
     <section class="page-header">
       <div class="neon"><h1 class="project-name">Quantum Sideral</h1><br><h2 class="project-tagline">Des particules d’histoires dans <br class="respbreak"/>un multivers d’aventures</h2></div>
 
@@ -54,24 +47,7 @@
             <a href="https://quantumsideral.github.io/la-croisee-des-chemins/"><button class="border">La croisee des chemins</button></a>
           </div>
           <div class="divbreak">
-            <button type="button" id="darkLight" onclick="toggleDarkLight()">Dark mode</button>
-            <script type="text/javascript">
-              if(typeof(Storage) !== "undefined") {
-                if (localStorage.buttonLightModeQS) {document.getElementById("darkLight").className = localStorage.buttonLightModeQS ;}
-                else {document.getElementById("darkLight").className = "border" ;}}
-              else {document.getElementById("darkLight").className = "border" ;}
-
-              function toggleDarkLight() {
-                var body = document.getElementById("body");
-                var currentClass = body.className;
-                body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
-                localStorage.setItem("lightModeQS", body.className);
-
-                var button = document.getElementById("darkLight");
-                var currentClassButton = button.className;
-                button.className = currentClassButton == "border" ? "border-dark" : "border";
-                localStorage.setItem("buttonLightModeQS", button.className);}
-            </script>
+            <button type="button" id="darkLight" onclick="toggleDarkLight('body','darkLight')">Dark mode</button>
           </div>
       </div>
       <div class="dropdown-hide" id="dropdownMenu">
@@ -145,6 +121,7 @@
         <script type="text/javascript">fireComments();</script>
       {% endif %}
     </section>
+    <script type="text/javascript">setLightMode("body","darkLight");</script>
   </body>
 </html>
 
