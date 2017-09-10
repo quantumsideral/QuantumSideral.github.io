@@ -42,14 +42,14 @@
       </div>
       <div class="dropdown-hide" id="dropdownMenu">
         <div class="divbreak">
-          <a href="{% for post in site.categories.Histoires limit:1 %}{{ post.url }}{% endfor %}"><button class="border">Derniere histoire</button></a>
+          <a href="{% for post in site.categories.Histoires limit:1 %}{{ post.url }}#main-content{% endfor %}"><button class="border">Derniere histoire</button></a>
         </div>
         <div class="divbreakDD">
           <button type="button" class="dropdown-off" id="dropdownButtonSF" onclick="toggleListMenu('dropdownMenuSF','dropdownButtonSF')" title="Toggle menu"></button>
           <div id="dropdownMenuSF" class="dropdown-list-hide">
             <ul>
               {% for post in site.categories.SF %}
-                <li><a href="{{ post.url }}" class="dropdown-sublist" >{{ post.title }}</a></li>
+                <li><a href="{{ post.url }}#main-content" class="dropdown-sublist" >{{ post.title }}</a></li>
               {% endfor %}
             </ul>
           </div>
@@ -60,7 +60,7 @@
           <div id="dropdownMenuFantasy" class="dropdown-list-hide">
             <ul>
               {% for post in site.categories.Fantasy %}
-                <li><a href="{{ post.url }}" class="dropdown-sublist" >{{ post.title }}</a></li>
+                <li><a href="{{ post.url }}#main-content" class="dropdown-sublist" >{{ post.title }}</a></li>
               {% endfor %}
             </ul>
           </div>
@@ -71,7 +71,7 @@
           <div id="dropdownMenuFantastique" class="dropdown-list-hide">
             <ul>
               {% for post in site.categories.Fantastique %}
-                <li><a href="{{ post.url }}" class="dropdown-sublist" >{{ post.title }}</a></li>
+                <li><a href="{{ post.url }}#main-content" class="dropdown-sublist" >{{ post.title }}</a></li>
               {% endfor %}
             </ul>
           </div>
