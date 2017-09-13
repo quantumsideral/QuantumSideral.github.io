@@ -1,6 +1,7 @@
 ---
 layout: default
 categories: Histoires SF
+title: Échos atemporels
 commentIssueId: 4
 ---
 # Echos atemporels
