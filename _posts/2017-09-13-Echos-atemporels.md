@@ -3,7 +3,7 @@ layout: default
 categories: Histoires SF
 commentIssueId: 4
 ---
-# Échos atemporels
+# Echos atemporels
 
 Un bruit strident réveilla Aaron. Le tic-tac de l’antique réveil posé sur la table de chevet rythmait quelques minutes plus tôt son sommeil, dont il sentait encore le besoin persistant. La nuit blanche qu’il venait de passer à discuter avec des contacts de l’autre côté de la planète l’avait lessivé. Un rêve flottait dans son esprit, mais s’effaça rapidement. Le tintamarre assourdissant provenait de son omniphone tout proche. *Ça a intérêt d’être important*, rumina-t-il. Il attrapa l’appareil, coupa la fonction caméra, et parla d’une voix rauque : « Allô ?
 
